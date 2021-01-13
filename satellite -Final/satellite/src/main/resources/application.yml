@@ -1,0 +1,17 @@
+server:
+  port: 8089
+
+  spring:
+    datasource:
+      username: admin
+      password: password
+      url: jdbc:mysql://satellitedb-1.czpiaqkx2qvf.us-east-2.rds.amazonaws.com:3306/satellitedb-1
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5Dialect
+      hibernate:
+        ddl-auto: update
+      show-sql: true
